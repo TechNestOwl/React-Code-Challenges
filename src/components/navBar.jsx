@@ -14,9 +14,10 @@ function NavbarDarkExample() {
           <Nav>
             <NavDropdown
               id="nav-dropdown-dark-example"
-              title="Dropdown"
+              title="Code Challenges"
               menuVariant="dark"
             >
+              {/* <Dropdown.Header>Select </Dropdown.Header> */}
               <NavDropdown.Item href="#action/3.1">Conversions</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Array Arithmetic</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Count Vowels</NavDropdown.Item>
@@ -28,7 +29,7 @@ function NavbarDarkExample() {
               <NavDropdown.Item href="#action/3.3">FizzBuzz</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Developer Notes
+                About me
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

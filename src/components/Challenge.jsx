@@ -1,5 +1,7 @@
 import '../styles/challenge.css';
 import { Container, Row, Col } from 'react-bootstrap';
+import Modal from './components/Modal'
+
 
 const Challenge = () => {
     return (
@@ -15,6 +17,7 @@ const Challenge = () => {
                     </Col>
                 </Row>
             </Container>
+            <Modal />
        </div>
     )
 };
