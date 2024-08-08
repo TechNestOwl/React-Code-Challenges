@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-function Modal() {
+function ModalPop() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,20 +11,20 @@ function Modal() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
+        Challenge Insights
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>How I solved this challenge</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          {/* <Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
+          </Button> */}
           <Button variant="primary" onClick={handleClose}>
-            Save Changes
+            Continue
           </Button>
         </Modal.Footer>
       </Modal>
@@ -32,4 +32,4 @@ function Modal() {
   );
 }
 
-export default Modal;
+export default ModalPop;

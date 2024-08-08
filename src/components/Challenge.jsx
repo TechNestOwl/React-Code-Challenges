@@ -1,6 +1,6 @@
 import '../styles/challenge.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import Modal from './components/Modal'
+import ModalPop from './ModalPop';
 
 
 const Challenge = () => {
@@ -17,7 +17,7 @@ const Challenge = () => {
                     </Col>
                 </Row>
             </Container>
-            <Modal />
+            <ModalPop />
        </div>
     )
 };
