@@ -1,9 +1,10 @@
 import './App.css';
+import Button from 'react-bootstrap/Button';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Hero from './components/Hero';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer'
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+import Challenge from './components/Challenge';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero/>
       <NavBar/>
       {/* <Button>this is a b</Button> */}
+      <Challenge/>
       <Footer/>
     </div>
   );

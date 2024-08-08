@@ -1,40 +1,41 @@
 import "../styles/navBar.css";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-const NavBar = () => {
-    return (
-        <nav className="navbar navbar-expand-lg navbar-light" id="navID">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">Gill Guimaraes</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Code Challenges
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Action</a></li>
-                  <li><a className="dropdown-item" href="#">Another action</a></li>
-                  {/* <li><hr className="dropdown-divider"></li> */}
-                  <li><a className="dropdown-item" href="#">Separated link</a></li>
-                </ul>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">About</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    )
-};
+function NavbarDarkExample() {
+  return (
+    <Navbar variant="dark" bg="dark" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#home">Gill Guimaraes</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-dark-example" />
+        <Navbar.Collapse id="navbar-dark-example">
+          <Nav>
+            <NavDropdown
+              id="nav-dropdown-dark-example"
+              title="Dropdown"
+              menuVariant="dark"
+            >
+              <NavDropdown.Item href="#action/3.1">Conversions</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Array Arithmetic</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Count Vowels</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Longest Word</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Palindrome
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">FizzBuzz</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Developer Notes
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
+}
 
-export default NavBar;
+export default NavbarDarkExample;
