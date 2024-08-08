@@ -1,0 +1,27 @@
+.jumbotron {
+    position: relative;
+    background-image: url('../Assets/heroImage.jpg');
+    height: 900px;
+    background-size: cover;
+    background: contain;
+    color: #ffffff;
+    text-align: left;
+    padding: 150px 25px;
+    margin-bottom: 0;
+  }
+  .jumbotron-text {
+    background-color: rgba(83, 82, 82, 0.193); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 500px;
+  }
+  .features {
+    padding: 80px 0;
+  }
+  .feature-box {
+    text-align: center;
+  }
+  .testimonial {
+    background-color: #e9ecef;
+    padding: 80px 0;
+  }
