@@ -1,6 +1,8 @@
+import "../styles/landing.css";
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import landingPic from "../Assets/problemSolving.jpg";
 
-const MainSection = () => {
+const Landing = () => {
   return (
     <section className="main-section">
       <Container>
@@ -12,7 +14,7 @@ const MainSection = () => {
           </Col>
           <Col md={6}>
             <img
-              src="src/Assets/problemSolving.jpg"
+              src={landingPic}
               alt="placeholder"
               className="img-fluid"
             />
@@ -23,4 +25,4 @@ const MainSection = () => {
   );
 }
 
-export default MainSection;
+export default Landing;
