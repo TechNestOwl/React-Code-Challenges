@@ -10,7 +10,7 @@ function NavbarDarkExample() {
   return (
     <Navbar variant="dark" bg="dark" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#home">Gill Guimaraes</Navbar.Brand>
+        <Navbar.Brand href="/">Gill Guimaraes</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-dark-example" />
         <Navbar.Collapse id="navbar-dark-example">
           <Nav>
@@ -31,7 +31,7 @@ function NavbarDarkExample() {
               <NavDropdown.Item href="#action/3.3">FizzBuzz</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                About me
+                About me 
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

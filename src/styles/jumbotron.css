@@ -37,14 +37,14 @@
     text-decoration: none;
     border: none;
     border-radius: 50px; 
-    background: linear-gradient(45deg, #6a251c, #571616); 
+    background: linear-gradient(45deg, #94372b, #571616); 
     box-shadow: 0 4px 8px rgba(100, 98, 98, 0.572); /* Shadow effect */
     transition: background 0.3s, transform 0.3s; /* Smooth transitions */
   }
 
   .stylish-button:hover,
   .stylish-button:focus {
-    /* background: linear-gradient(45deg, #6fcacc, #366b3a);   */ 
+    background: linear-gradient(45deg, #94372b, #94372b); 
     box-shadow: 0 4px 8px rgba(186, 185, 185, 0.572); /* Shadow effect */
     transform: scale(1.05); /* Slight zoom effect on hover */
     outline: none; /* Remove default outline */

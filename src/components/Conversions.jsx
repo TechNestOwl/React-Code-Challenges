@@ -57,11 +57,12 @@ const Conversions = () => {
                     <div className="divider"></div>
                     <Col md={5} className="custom-col">
                     <div className="content">
-                        <img src={problemPic} />;
+                        <img src={problemPic} />
                     </div>
                     </Col>
                 </Row>
             </Container>
+            <br />
             <ModalPop />
        </div>
     )

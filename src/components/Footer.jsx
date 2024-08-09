@@ -18,7 +18,7 @@ const Footer = () => {
                             <a href="https://github.com/TechNestOwl" target="_blank" title="GitHub"><img src={github} style={{width: '50px'}}/></a>
                             <a href="https://www.linkedin.com/in/gill-guimaraes-6aa9141b4/" target="_blank" title="LinkedIn"><img src={linkedIn} style={{width: '50px'}}/></a>
                             {/* <a href="https://twitter.com/GuimaraesGill" target="_blank" title="Twitter"><img src={twitter} style={{width: "50px", height: "30px"}}/></a> */}
-                            <a href="https://www.facebook.com/guil.guimaraes.1/" target="_blank" title="Facebook"><img src={meta} style={{width: '100px'}}/></a>
+                            {/* <a href="https://www.facebook.com/guil.guimaraes.1/" target="_blank" title="Facebook"><img src={meta} style={{width: '100px'}}/></a> */}
                             {/* <a href="https://www.youtube.com/channel/UCjn8L2mKg4gdPSMnA0XIWJg" target="_blank" title="YouTube"><img src={youtube} style={{width: "100px"}}/></a> */}
                             {/*
                             link to tinker with SVG's:
