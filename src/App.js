@@ -6,6 +6,8 @@ import NavBar from './components/NavBar';
 import Footer from './components/Footer'
 import Landing from './components/landing';
 import Conversions from './components/Conversions';
+import LongestW from './components/longestWord';
+import KmToMiConverter from './components/converter';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Landing/>}/>
             <Route path='/Conversions' element={<Conversions />}/>
+            <Route path='longestword' element={<LongestW />}/>
+            <Route path='/converter' element={<KmToMiConverter />}/>
 
           </Routes>
         </div>

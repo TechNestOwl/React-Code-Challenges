@@ -21,9 +21,9 @@ function NavbarDarkExample() {
             >
               {/* <Dropdown.Header>Select </Dropdown.Header> */}
               <NavDropdown.Item href='/conversions'>Conversions</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Array Arithmetic</NavDropdown.Item>
+              <NavDropdown.Item href="/converter">Array Arithmetic</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Count Vowels</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Longest Word</NavDropdown.Item>
+              <NavDropdown.Item href="/longestword">Longest Word</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Palindrome
