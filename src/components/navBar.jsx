@@ -28,7 +28,7 @@ function NavbarDarkExample() {
               <NavDropdown.Item href="#action/3.2">
                 Palindrome
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">FizzBuzz</NavDropdown.Item>
+              <NavDropdown.Item href="/converter">Converter UseState</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 About me 

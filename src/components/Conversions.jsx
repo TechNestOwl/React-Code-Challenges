@@ -14,6 +14,8 @@ const Conversions = () => {
 
                         <div class="col-12 col-md-6">
                             <h1>Conversions</h1>
+                            <p>These javascript challenges were completed using Vanilla Javascript. A similar verison of this challenge wehre I implement React UseState can be found here. <br />
+                            <a href="/converter">React UseState</a></p>
                 
                              <p ><strong>Kilometers to Miles</strong> </p>
                             <div class="form-group">
@@ -68,4 +70,81 @@ const Conversions = () => {
     )
 };
 
+
+
 export default Conversions;
+
+// my vanilla javascript
+// document.getElementById("btnSubmit1").addEventListener("click", convertMi);
+// document.getElementById("btnSubmit2").addEventListener("click", convertF);
+// document.getElementById("btnSubmit3").addEventListener("click", convertCm);
+
+
+
+
+function convertMi(){
+    let kmValue = parseFloat(document.getElementById("InputValue1").value)
+
+    if(isNaN(kmValue)){
+        alert("please input a number value")
+    }else{
+        let milesValue = convertToMi(kmValue)
+
+        document.getElementById("results").innerHTML = `${kmValue} kilometers is equivalent to ${milesValue.toFixed(2)} miles`
+    }
+}
+function convertToMi(km){
+    let milesValue = 0;
+
+    milesValue = km * 0.621;
+    return milesValue;
+};
+
+
+function convertF(){
+    //getting the users input. Note: parseFloat converts a string into a floating point number
+    let cValue = parseFloat(document.getElementById("InputValue2").value)
+
+    //checking to see if input is valid
+    if(isNaN(cValue)){
+        alert("please input a number value")
+    }else{
+        let fValue = convertToF(cValue)
+
+        //displaying finished conversion + rounding 2 decimal places
+        document.getElementById("results").innerHTML = `${cValue} degrees celsius is equivalent to ${fValue} degrees farenheit`
+    }
+}
+
+function convertToF(c){
+    let fahrenheit = 0;
+
+    fahrenheit = (c * 9/5) + 32;
+
+    return fahrenheit;
+}
+
+
+
+function convertCm(){
+    //getting the users input. Note: parseFloat converts a string into a floating point number
+    let cmValue = parseFloat(document.getElementById("InputValue3").value)
+
+    //checking to see if input is valid
+    if(isNaN(cmValue)){
+        alert("please input a number value")
+    }else{
+        let inValue = convertToIn(cmValue)
+
+        //displaying finished conversion + rounding 2 decimal places
+        document.getElementById("results").innerHTML = `${cmValue} centimeters is equivalent to ${inValue.toFixed(2)} inches`
+    }
+}
+
+function convertToIn(cm){
+    let inches = 0;
+
+    inches = cm * 0.393 ;
+
+    return inches;
+}
