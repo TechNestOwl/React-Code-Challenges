@@ -2,9 +2,14 @@
 
 This project was bootstrapped with React.
 
-## Available Scripts
+## Coding Challeneges:
+- FizzBuzz
+- Palindrome
+- Array Arithmetic
+- Count Vowels
+- Object data manipulation
+- Various others..
 
-In the project directory, you can run:
 
 ### `Takeaways`
 
