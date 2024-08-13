@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Challenge from "./Conversions";
+import Counter from "./Counter";
 
 
 function NavbarDarkExample() {
@@ -24,6 +25,9 @@ function NavbarDarkExample() {
               <NavDropdown.Item href="/converter">Array Arithmetic</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Count Vowels</NavDropdown.Item>
               <NavDropdown.Item href="/longestword">Longest Word</NavDropdown.Item>
+              <NavDropdown.Item href="/counter">Counter</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Palindrome
