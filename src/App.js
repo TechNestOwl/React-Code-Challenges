@@ -12,6 +12,7 @@ import Counter from './components/Counter';
 import AboutMe from './components/AboutMe';
 import ObjSort from './components/ObjectSorting';
 import Palindrome from './components/Palindrome';
+import DoubleTap from './components/Counter2';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path='/aboutme' element={<AboutMe />}/>
             <Route path='/objectsort' element={<ObjSort />}/>
             <Route path="/palindrome" element={<Palindrome />}/>
+            <Route path="/doubletap" element={<DoubleTap />}/>
 
           </Routes>
         </div>
