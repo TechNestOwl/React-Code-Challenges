@@ -3,13 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-
-const UserInputForm = () => {
-}
-
-
 const Palindrome = () => {
-    
+
     const [inputValue, setInputValue] = useState('');
     const [result, setResult] = useState('');
     
