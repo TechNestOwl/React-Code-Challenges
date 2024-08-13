@@ -26,10 +26,10 @@ function NavbarDarkExample() {
               <NavDropdown.Item href="#action/3.1">Count Vowels</NavDropdown.Item>
               <NavDropdown.Item href="/longestword">Longest Word</NavDropdown.Item>
               <NavDropdown.Item href="/counter">Counter</NavDropdown.Item>
+              <NavDropdown.Item href="/objectsort">Object Sort</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
+              <NavDropdown.Item href="/palindrome">
                 Palindrome
               </NavDropdown.Item>
               <NavDropdown.Item href="/converter">Converter UseState</NavDropdown.Item>

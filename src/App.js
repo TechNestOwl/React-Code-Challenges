@@ -10,6 +10,8 @@ import LongestW from './components/longestWord';
 import KmToMiConverter from './components/converter';
 import Counter from './components/Counter';
 import AboutMe from './components/AboutMe';
+import ObjSort from './components/ObjectSorting';
+import Palindrome from './components/Palindrome';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
             <Route path='/converter' element={<KmToMiConverter />}/>
             <Route path='/counter' element={<Counter />}/>
             <Route path='/aboutme' element={<AboutMe />}/>
+            <Route path='/objectsort' element={<ObjSort />}/>
+            <Route path="/palindrome" element={<Palindrome />}/>
 
           </Routes>
         </div>
