@@ -34,7 +34,7 @@ function NavbarDarkExample() {
               </NavDropdown.Item>
               <NavDropdown.Item href="/converter">Converter UseState</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
+              <NavDropdown.Item href="/aboutme">
                 About me 
               </NavDropdown.Item>
             </NavDropdown>

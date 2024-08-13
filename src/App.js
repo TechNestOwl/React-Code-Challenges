@@ -9,6 +9,7 @@ import Conversions from './components/Conversions';
 import LongestW from './components/longestWord';
 import KmToMiConverter from './components/converter';
 import Counter from './components/Counter';
+import AboutMe from './components/AboutMe';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path='longestword' element={<LongestW />}/>
             <Route path='/converter' element={<KmToMiConverter />}/>
             <Route path='/counter' element={<Counter />}/>
+            <Route path='/aboutme' element={<AboutMe />}/>
 
           </Routes>
         </div>

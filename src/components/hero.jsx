@@ -10,7 +10,7 @@ const Hero = () => {
                     "I built this react app to demonstrate proficiency in JavaScript with code challenges. These serve as a showcase 
                         of problem-solving skills and deep understanding of programming concepts and logic." <br/>- Gill G.
                     </p>
-                    <a href="#" className="stylish-button">Learn More</a>
+                    <a href="/aboutme" className="stylish-button">Learn More</a>
                 </div>
             </div>
         </div>
