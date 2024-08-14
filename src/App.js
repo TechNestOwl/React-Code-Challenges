@@ -13,6 +13,7 @@ import AboutMe from './components/AboutMe';
 import ObjSort from './components/ObjectSorting';
 import Palindrome from './components/Palindrome';
 import DoubleTap from './components/Counter2';
+import ToDoList from './components/Todo';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
             <Route path='/objectsort' element={<ObjSort />}/>
             <Route path="/palindrome" element={<Palindrome />}/>
             <Route path="/doubletap" element={<DoubleTap />}/>
-
+            <Route path='/todo' element={<ToDoList />} />
           </Routes>
         </div>
         <Footer/>
