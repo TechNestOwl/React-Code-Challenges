@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import RoundThumbNail from './Thumbnail';
+import headshot from '../Assets/headShot.jpg';
 
 
 const AboutMe = () => {
@@ -8,9 +10,14 @@ const AboutMe = () => {
           <div className="col-md-8">
             <div className="card shadow-sm">
               <div className="card-body">
+                <RoundThumbNail
+                    src={headshot}
+                    alt="My_headshot"
+                    size={175}
+                />
                 <h2 className="card-title text-center">About Me</h2>
                 <p className="card-text mt-4">
-                  I am a passionate <strong>Software Engineer</strong> with over 2 years of experience and extensive practice in computer science and technology. My journey in the tech industry has equipped me with a deep understanding of software development, testing, deployment, and support.
+                  I am a passionate <strong>Software Developer</strong> with over 2 years of experience and extensive practice in computer science and technology. My journey in the tech industry has equipped me with a deep understanding of software development, testing, deployment, and support.
                 </p>
                 <p className="card-text">
                   I am constantly seeking opportunities to grow and take on new challenges. My goal is to contribute my expertise in a fast-growing organization that values innovation and agility. I am committed to delivering high-quality solutions using agile development methodologies, and I thrive in environments that encourage continuous learning and collaboration.

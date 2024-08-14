@@ -27,7 +27,7 @@ function NavbarDarkExample() {
               <NavDropdown.Item href="/longestword">Longest Word</NavDropdown.Item>
               <NavDropdown.Item href="/counter">Counter</NavDropdown.Item>
               <NavDropdown.Item href="/objectsort">Object Sort</NavDropdown.Item>
-              <NavDropdown.Item href="/todo">To-Do</NavDropdown.Item>
+              <NavDropdown.Item href="/todo">To-Do List</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Object Search</NavDropdown.Item>
               <NavDropdown.Item href="/palindrome">
                 Palindrome
