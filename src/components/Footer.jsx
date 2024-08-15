@@ -8,6 +8,8 @@ import meta from '../Assets/meta-horizontal-light.svg';
 
 
 const Footer = () => {
+
+    const today = new Date();
     return (
         <div className="text-light py-4" id="footer">
             
@@ -34,7 +36,8 @@ const Footer = () => {
                     </div>
                     <div className="row">
                         <div className="col-lg-12">
-                        <p className="mb-0">© 2024 Gill Guimaraes</p>
+                        <p className="mb-0">
+                            © {today.getFullYear()} Gill Guimaraes</p>
                         </div>
                     </div>
                 </div>
