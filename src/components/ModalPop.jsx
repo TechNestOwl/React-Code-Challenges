@@ -30,3 +30,6 @@ function ModalPop() {
 }
 
 export default ModalPop;
+
+// I need to create props and pass them to the modal pop dynamically, on a per component render-case-basis.
+// Each code challenge component must have it's own unique props to pass to ModalPop

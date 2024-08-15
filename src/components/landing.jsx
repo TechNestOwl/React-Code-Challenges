@@ -1,6 +1,7 @@
 import "../styles/landing.css";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import landingPic from "../Assets/problemSolving.jpg";
+import ModalPop from "./ModalPop";
 
 const Landing = () => {
   return (
@@ -8,9 +9,18 @@ const Landing = () => {
       <Container>
         <Row className="align-items-center">
           <Col md={6}>
-            <h1>Where to start..</h1>
-            <p>Thank you for being here. <br /> Click on the code challenges dropdown above to checkout how I solve various tasks using programming concepts.</p>
-            <Button variant="primary">Get Started</Button>
+            
+            <Button variant="primary">
+              <h1>Where to start?</h1>
+            </Button>
+
+            <div>
+              <ModalPop />
+            </div>
+
+            <p>Click on the code challenges dropdown above to checkout how I solve various tasks using programming concepts.</p>
+            <p> Each challenge presented here represents a unique problem-solving experience. Explore my work, see my progress, and get a
+               glimpse into how I approach and solve real-world coding problems. Thank you for visiting, and I hope you enjoy exploring my code challenges as much as I enjoyed solving them!</p>
           </Col>
           <Col md={6}>
             <img
