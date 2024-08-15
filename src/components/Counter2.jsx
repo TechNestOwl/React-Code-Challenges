@@ -1,5 +1,9 @@
+// This component is used to test out new ideas and concepts. For devlopment use only; /dev
+
 
 import React, { useState } from 'react';
+import ModalPop from './ModalPop';
+import photo from "../Assets/logo_weatherBooth.png"
 
 
 
@@ -15,11 +19,19 @@ const DoubleTap = () => {
         setCount(prevCount => prevCount -2)
     };
 
+    const modalBtn ="Challenge Insights"
+    const modalTitle = "Counter Challenge";
+    const modalBody = "This counter was very fun to build. I implemented so many new ideas and concpets. I hit a road block when I this function wasn't working, this was solved by doing implenting that.";
+
     return(
         <div>
             <button onClick={doubleTapUP}>+</button>
             <span>{count}</span>
             <button onClick={doubleTapDown}>-</button>
+            <br />
+            <br />
+            <br />
+            <ModalPop img={photo} modalTitle={modalTitle} modalBody={modalBody} modalBtn={modalBtn}/>
         </div>
     )
 };

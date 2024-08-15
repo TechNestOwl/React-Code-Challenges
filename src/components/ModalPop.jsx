@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
+import { propTypes } from 'react-bootstrap/esm/Image';
 import Modal from 'react-bootstrap/Modal';
 
-function ModalPop() {
+function ModalPop(props) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,15 +12,16 @@ function ModalPop() {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        Challenge Insights
+        {props.modalBtn}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>How I solved this challenge</Modal.Title>
+          <Modal.Title>{props.modalTitle}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+        <Modal.Body>{props.modalBody}</Modal.Body>
         <Modal.Footer>
+          <img src={props.img} />
           <Button variant="primary" onClick={handleClose}>
             Continue
           </Button>

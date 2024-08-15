@@ -31,7 +31,8 @@ function App() {
             <Route path='/aboutme' element={<AboutMe />}/>
             <Route path='/objectsort' element={<ObjSort />}/>
             <Route path="/palindrome" element={<Palindrome />}/>
-            <Route path="/doubletap" element={<DoubleTap />}/>
+            {/* pass prop to child */}
+            <Route path="/dev" element={<DoubleTap />}/>
             <Route path='/todo' element={<ToDoList />} />
           </Routes>
         </div>
