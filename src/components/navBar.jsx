@@ -5,7 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Challenge from "./Conversions";
 import Counter from "./Counter";
-
+import TodoTracker from "./todoTracker";
 
 function NavbarDarkExample() {
   return (
@@ -41,6 +41,9 @@ function NavbarDarkExample() {
           </Nav>
         </Navbar.Collapse>
       </Container>
+      {/* ghostCounter will receive a prop list item from sibling (<ToDo />) */}
+      <TodoTracker />
+
     </Navbar>
   );
 }

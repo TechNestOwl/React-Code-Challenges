@@ -17,9 +17,8 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-12 mb-4">
 
-                            {/* ghostCounter will receive a prop from sibling (<Counter2 />) */}
-                            <div className="ghostCounter">
-                            <a href="/dev">prop</a>
+                            <div className="devLink">
+                            <a href="/dev">dev</a>
                             </div>
 
                             <h5 className="footer-heading">Connect with me on:</h5><br/>
