@@ -13,3 +13,5 @@ This project was bootstrapped with React.
 
 ### `Takeaways`
 
+![Alt text](src/Assets/design-a-sleek-modern-logo-that-creatively-integra-pZufsB_ETHa3aiSqkUc8OQ-UFXLztAyRHmUIISAnhQw-w.jpeg)
+
