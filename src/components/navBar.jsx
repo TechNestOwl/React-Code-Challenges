@@ -42,7 +42,6 @@ function NavbarDarkExample() {
         </Navbar.Collapse>
       </Container>
       {/* ghostCounter will receive a prop list item from sibling (<ToDo />) */}
-      <TodoTracker />
 
     </Navbar>
   );

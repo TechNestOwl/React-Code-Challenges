@@ -1,23 +1,13 @@
 // This component is used to test out new ideas and features. For devlopment use only; /dev
 
 
-import React, { useState } from 'react';
 import ModalPop from './ModalPop';
 import photo from "../Assets/logo_weatherBooth.png"
 
 
 
-const DoubleTap = () => {
+const DoubleTap = ({ items, id, length, handleAdd, handleSubtract}) => {
     
-    const [count, setCount] = useState(0);
-
-    function doubleTapUP(){
-        setCount(prevCount => prevCount + 2)
-    };
-
-    function doubleTapDown(){
-        setCount(prevCount => prevCount -2)
-    };
 
     
     const modalTitle = "Counter Challenge";
@@ -25,9 +15,9 @@ const DoubleTap = () => {
 
     return(
         <div>
-            <button onClick={doubleTapUP}>+</button>
-            <span>{count}</span>
-            <button onClick={doubleTapDown}>-</button>
+            <button onClick={handleAdd}>+</button>
+            <span>{ length }</span>
+            <button onClick={handleSubtract}>-</button>
             <br />
             <br />
             <br />

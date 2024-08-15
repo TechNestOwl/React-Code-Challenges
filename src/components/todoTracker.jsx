@@ -1,11 +1,11 @@
 
 
 
-const TodoTracker = () =>{
+const TodoTracker = ({ length }) =>{
 
     let trackerStyle = {
         fontFamily: "Monospace",
-        color: "white",
+        color: "black",
         // feature to work on: pass dynamic value to color. defualt value of zero
     }
    
@@ -13,7 +13,7 @@ const TodoTracker = () =>{
         // in todoCount, set default value zero and background color to invisible)
         // when count is updated to abouve 0, color will now trasition to white.
         <div className="todoCount">
-            <p style={trackerStyle}>To-Do: 0</p>
+            <p style={trackerStyle}>Counter:{length}</p>
         </div>
 
     )

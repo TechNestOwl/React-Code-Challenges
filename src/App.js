@@ -15,35 +15,37 @@ import ObjSort from './components/ObjectSorting';
 import Palindrome from './components/Palindrome';
 import DoubleTap from './components/Counter2';
 import ToDoList from './components/Todo';
+import TodoTracker from './components/todoTracker';
 
 function App() {
 
-  const [item, setNewItem] = useState([
+  const [items, setNewItem] = useState([
     {
         id: 1,
-        checked: true,
         item: "Item one"
     },
     {
         id: 2,
-        checked: false,
         item: "this is another item on the list"
     },
     {
         id: 3,
-        checked: true,
         item: "third item on the list here!"
     },
     {
         id: 4,
-        checked: false,
         item: "My first, my last, my everything.."
     },
 ]);
 
+// todo list logic goes here:
 
-
-
+const handleAdd= ()=>{
+  console.log("++")
+};
+const handleSubtract= ()=>{
+  console.log("--")
+};
 
 
 
@@ -65,11 +67,17 @@ function App() {
             <Route path='/aboutme' element={<AboutMe />}/>
             <Route path='/objectsort' element={<ObjSort />}/>
             <Route path="/palindrome" element={<Palindrome />}/>
-            {/* pass prop to child */}
-            <Route path="/dev" element={<DoubleTap />}/>
+            <Route path="/dev" element={<DoubleTap 
+               items={items}
+               length={items.length}
+               id={items.id}
+               handleAdd={handleAdd}
+               handleSubtract={handleSubtract}
+            />}/>
             <Route path='/todo' element={<ToDoList />} />
           </Routes>
         </div>
+        <TodoTracker length={items.length} />
         <Footer/>
       </div>
     </Router>
