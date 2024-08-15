@@ -18,3 +18,9 @@
   
   }
  
+  .ghostCounter:a{
+    color:red;
+  }
+  .ghostCounter:hover{
+    color:#3f556a;    
+  }

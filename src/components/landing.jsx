@@ -23,9 +23,9 @@ const Landing = () => {
 
             <div>
               <ModalPop
-               modalBtn={modalBtn}
-               modalTitle={modalTitle}
-               modalBody={modalBody}
+               btn={modalBtn}
+               title={modalTitle}
+               body={modalBody}
                />
             </div>
             <br/>

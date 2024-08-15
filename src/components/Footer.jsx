@@ -14,6 +14,12 @@ const Footer = () => {
                 <div className="container text-center">
                     <div className="row">
                         <div className="col-lg-12 mb-4">
+
+                            {/* ghostCounter will receive a prop from sibling (<Counter2 />) */}
+                            <div className="ghostCounter">
+                            <a href="/dev">prop</a>
+                            </div>
+
                             <h5 className="footer-heading">Connect with me on:</h5><br/>
                             <a href="https://github.com/TechNestOwl" target="_blank" title="GitHub"><img src={github} style={{width: '50px'}}/></a>
                             <a href="https://www.linkedin.com/in/gill-guimaraes-6aa9141b4/" target="_blank" title="LinkedIn"><img src={linkedIn} style={{width: '50px'}}/></a>

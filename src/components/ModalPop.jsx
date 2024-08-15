@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import { propTypes } from 'react-bootstrap/esm/Image';
 import Modal from 'react-bootstrap/Modal';
 
-function ModalPop(props) {
+function ModalPop({ btn, title, body, img}) {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -12,16 +12,16 @@ function ModalPop(props) {
   return (
     <>
       <Button variant="primary" onClick={handleShow}>
-        {props.modalBtn}
+        {btn}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{props.modalTitle}</Modal.Title>
+          <Modal.Title>{title}</Modal.Title>
         </Modal.Header>
-        <Modal.Body>{props.modalBody}</Modal.Body>
+        <Modal.Body>{body}</Modal.Body>
         <Modal.Footer>
-          <img src={props.img} />
+          <img src={img} />
           <Button variant="primary" onClick={handleClose}>
             Continue
           </Button>
@@ -31,7 +31,12 @@ function ModalPop(props) {
   );
 }
 
-export default ModalPop;
+ModalPop.defaultProps = {
+  btn:"Challenge Insights"
+}
 
-// I need to create props and pass them to the modal pop dynamically, on a per component render-case-basis.
-// Each code challenge component must have it's own unique props to pass to ModalPop
+// Setting default prop values is good practice, 
+// especially when first designing a component and not yet receiving the data.
+
+
+export default ModalPop;
