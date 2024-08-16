@@ -22,19 +22,19 @@ function App() {
   const [items, setNewItem] = useState([
     {
         id: 1,
-        item: "Item one"
+        content: "Item one"
     },
     {
         id: 2,
-        item: "this is another item on the list"
+        content: "this is another item on the list"
     },
     {
         id: 3,
-        item: "third item on the list here!"
+        content: "third item on the list here!"
     },
     {
         id: 4,
-        item: "My first, my last, my everything.."
+        content: "My first, my last, my everything.."
     },
 ]);
 

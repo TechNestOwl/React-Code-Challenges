@@ -8,7 +8,7 @@ const Landing = () => {
   // modalPop props
   const modalBtn = "Where to start?";
   const modalTitle = "Where to start?";
-  const modalBody = "In the Nav bar, click on the code challenges dropdown to checkout how I solved various tasks using Javascript.";
+  const modalBody = "In the Nav bar, click on the code challenges dropdown and checkout how I solved various problems using Javascript.";
 
 
   return (

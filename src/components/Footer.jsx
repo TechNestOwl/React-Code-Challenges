@@ -17,9 +17,9 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-lg-12 mb-4">
 
-                            <div className="devLink">
+                            {/* <div className="devLink">
                             <a href="/dev">dev</a>
-                            </div>
+                            </div> */}
 
                             <h5 className="footer-heading">Connect with me on:</h5><br/>
                             <a href="https://github.com/TechNestOwl" target="_blank" title="GitHub"><img src={github} style={{width: '50px'}}/></a>

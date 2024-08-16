@@ -12,42 +12,42 @@ const Conversions = () => {
                     <Col md={5} className="custom-col">
                     <div className="content">
 
-                        <div class="col-12 col-md-6">
+                        <div className="col-12 col-md-6">
                             <h1>Conversions</h1>
                             <p>These javascript challenges were completed using Vanilla Javascript. A similar verison of this challenge wehre I implement React UseState can be found here. <br />
                             <a href="/converter">React UseState</a></p>
                 
                              <p ><strong>Kilometers to Miles</strong> </p>
-                            <div class="form-group">
-                                <input type="number" class="form-control" id="InputValue1" aria-describedby="kmHelp"
+                            <div className="form-group">
+                                <input type="number" className="form-control" id="InputValue1" aria-describedby="kmHelp"
                                     placeholder="Km value" />
-                                <small id="kmHelp" class="form-text text-muted">Enter a number in kilometers</small>
-                                <div class="mt-1 text-end">
-                                    <button id="btnSubmit1" type="button" class="btn btn-warning">Convert</button>
+                                <small id="kmHelp" className="form-text text-muted">Enter a number in kilometers</small>
+                                <div className="mt-1 text-end">
+                                    <button id="btnSubmit1" type="button" className="btn btn-warning" onClick={convertMi}>Convert</button>
                                 </div>
                             </div>
                             <p ><strong>Celsius to Fahrenheit</strong> </p>
-                            <div class="form-group">
-                                <input type="number" class="form-control" id="InputValue2" aria-describedby="kmHelp"
+                            <div className="form-group">
+                                <input type="number" className="form-control" id="InputValue2" aria-describedby="kmHelp"
                                     placeholder="Celsius value" />
-                                <small id="kmHelp" class="form-text text-muted">Enter a number in Celsius</small>
-                                <div class="mt-1 text-end">
-                                    <button id="btnSubmit2" type="button" class="btn btn-warning">Convert</button>
+                                <small id="kmHelp" className="form-text text-muted">Enter a number in Celsius</small>
+                                <div className="mt-1 text-end">
+                                    <button id="btnSubmit2" type="button" className="btn btn-warning" onClick={convertF}>Convert</button>
                                 </div>
                             </div>
                             <p ><strong>Centimeters to Inches</strong> </p>
-                            <div class="form-group">
-                                <input type="number" class="form-control" id="InputValue3" aria-describedby="kmHelp"
+                            <div className="form-group">
+                                <input type="number" className="form-control" id="InputValue3" aria-describedby="kmHelp"
                                     placeholder="Cm value" />
-                                <small id="kmHelp" class="form-text text-muted">Enter a number in Centimeters</small>
+                                <small id="kmHelp" className="form-text text-muted">Enter a number in Centimeters</small>
                             </div>
-                            <div class="mt-1 text-end">
-                                <button id="btnSubmit3" type="button" class="btn btn-warning">Convert</button>
+                            <div className="mt-1 text-end">
+                                <button id="btnSubmit3" type="button" className="btn btn-warning" onClick={convertCm}>Convert</button>
                             </div>
                             <br />
                 
-                            <div class="col-12 order-last mt-4 mb-2">
-                                <div id="results" class="languageName display-6">
+                            <div className="col-12 order-last mt-4 mb-2">
+                                <div id="results" className="languageName display-6">
                                     Results...
                                 </div>
                                 <div id="namelist"></div>
@@ -74,13 +74,9 @@ const Conversions = () => {
 
 export default Conversions;
 
-// my vanilla javascript
-// document.getElementById("btnSubmit1").addEventListener("click", convertMi);
-// document.getElementById("btnSubmit2").addEventListener("click", convertF);
-// document.getElementById("btnSubmit3").addEventListener("click", convertCm);
 
 
-
+// my old vanilla javascript, todo: update and refactor for React.
 
 function convertMi(){
     let kmValue = parseFloat(document.getElementById("InputValue1").value)
