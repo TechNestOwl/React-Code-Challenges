@@ -20,6 +20,7 @@ const Landing = () => {
             {/* <Button variant="primary">
               <h1>Where to start?</h1>
             </Button> */}
+          <p>Welcome to CodeCraft</p>
 
             <div>
               <ModalPop
