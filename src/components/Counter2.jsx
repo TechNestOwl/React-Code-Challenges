@@ -5,7 +5,6 @@ import ModalPop from './ModalPop';
 import photo from "../Assets/logo_weatherBooth.png"
 
 
-
 const DoubleTap = ({ items, id, length, handleAdd, handleSubtract}) => {
     
 

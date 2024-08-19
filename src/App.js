@@ -16,6 +16,7 @@ import Palindrome from './components/Palindrome';
 import DoubleTap from './components/Counter2';
 import ToDoList from './components/Todo';
 import TodoTracker from './components/todoTracker';
+import UserSignIn from './components/UserSignIn';
 
 function App() {
 
@@ -48,10 +49,6 @@ const handleSubtract= ()=>{
 };
 
 
-
-
-
-
   return (
     <Router>
       <div className="App">
@@ -75,6 +72,7 @@ const handleSubtract= ()=>{
                handleSubtract={handleSubtract}
             />}/>
             <Route path='/todo' element={<ToDoList />} />
+            <Route path='/usersignin' element={<UserSignIn />}/>
           </Routes>
         </div>
         <TodoTracker length={items.length} />

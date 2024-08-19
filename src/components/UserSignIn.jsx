@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState } from 'react';
 import photo from '../Assets/codeCraft.jpeg'
 
-const SignIn = () => {
 
+const UserSignIn = () => {
 
-
-    const UserForm = () => {
         const [formData, setFormData] = useState({
           email: '',
           username: '',
@@ -22,11 +20,8 @@ const SignIn = () => {
         const handleSubmit = (e) => {
           e.preventDefault();
           console.log('Form submitted:', formData);
-          // You can add further processing here, such as sending the data to an API.
+          // Here I will add further processing, such as sending the data to an API.
         };
-    };
-
-
 
     return (
         <div className="container mt-4">
@@ -76,4 +71,4 @@ const SignIn = () => {
 
 };
 
-export default SignIn;
+export default UserSignIn;

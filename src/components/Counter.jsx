@@ -4,15 +4,16 @@ import ModalPop from "./ModalPop";
 const Counter = () =>{
 
     const [count, setCount] = useState(0);
+    // Here I am decalring the state and assigning it a default value of -
 
     function decrementCount(){
         setCount(prevCount => prevCount - 1);
     };
-
+// decremmenting the count by setting the count to the previous count and subtracting 1
     function incrementCount()    {
         setCount(prevCount => prevCount + 1);
     };
-
+// doing the same here
     function resetCount(){
         setCount(0);
     };
