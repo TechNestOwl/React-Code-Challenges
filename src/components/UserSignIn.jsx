@@ -24,6 +24,7 @@ const SignIn = () => {
           console.log('Form submitted:', formData);
           // You can add further processing here, such as sending the data to an API.
         };
+    };
 
 
 
@@ -69,6 +70,7 @@ const SignIn = () => {
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
+      <img src={photo} alt="this is a test photo" /> 
     </div>
     )
 
